@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nisa Go</title>
+    <meta name="description" content="Official Privacy Policy for Nisa Go ride-sharing application. Learn how we protect personal, location, and biometric data for women passengers and captains in Pakistan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #be185d;
+            --primary-dark: #9d174d;
+            --primary-light: #fce7f3;
+            --accent: #ec4899;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-bar {
+            background: linear-gradient(135deg, #9d174d 0%, #be185d 50%, #db2777 100%);
+            color: #ffffff;
+            padding: 48px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-bar .logo-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .header-bar h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        .header-bar p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .meta-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .meta-badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .main-container {
+            max-width: 900px;
+            margin: -24px auto 60px;
+            padding: 0 20px;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .toc-box {
+            background: #fff1f2;
+            border: 1px solid #fecdd3;
+            border-left: 5px solid var(--primary);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-bottom: 36px;
+        }
+
+        .toc-box h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary-dark);
+            font-size: 1.15rem;
+            margin-bottom: 14px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 8px 16px;
+        }
+
+        .toc-list a {
+            color: #831843;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary-dark);
+            font-size: 1.65rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            color: #334155;
+            font-size: 1.2rem;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #334155;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 18px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-alert {
+            background-color: #fdf2f8;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            color: #701a75;
+        }
+
+        .highlight-alert strong {
+            color: #831843;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .info-card {
+            background: #fafafa;
+            border: 1px solid var(--border-color);
+            padding: 18px;
+            border-radius: var(--radius-md);
+        }
+
+        .info-card h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .info-card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+
+        .deletion-steps {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .deletion-steps h4 {
+            color: #166534;
+            margin-bottom: 12px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+            border: 1px solid #fbcfe8;
+            padding: 28px;
+            border-radius: var(--radius-lg);
+            margin-top: 36px;
+        }
+
+        .contact-box h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bar {
+            text-align: center;
+            padding: 30px 20px;
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 640px) {
+            .header-bar h1 {
+                font-size: 1.85rem;
+            }
+            .content-card {
+                padding: 24px 18px;
+            }
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bar">
+        <div class="logo-tag">Nisa Go • Women Safe Transit</div>
+        <h1>Privacy Policy</h1>
+        <p>Your privacy, dignity, and safety are at the core of everything we build.</p>
+        <div class="meta-badges">
+            <span class="meta-badge">📅 Effective: October 2026</span>
+            <span class="meta-badge">📱 App: Nisa Go</span>
+            <span class="meta-badge">🆔 online.nisago.app</span>
+            <span class="meta-badge">🇵🇰 Islamic Republic of Pakistan</span>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <article class="content-card">
+            
+            <div class="highlight-alert">
+                <strong>Safety & Privacy Commitment:</strong> Nisa Go is a female-first ride-sharing platform designed to provide safe, verified, and dignified mobility for women in Pakistan. We never sell your personal data, we mask phone numbers to prevent unsolicited contact, and we enforce rigorous biometric verification strictly to safeguard our community.
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc-box">
+                <h3>Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#introduction">1. Introduction & Scope</a></li>
+                    <li><a href="#information-we-collect">2. Information We Collect</a></li>
+                    <li><a href="#biometric-policy">3. Biometric & Facial Data Policy</a></li>
+                    <li><a href="#location-practices">4. Geolocation Data Practices</a></li>
+                    <li><a href="#number-masking">5. Number Masking & Communications</a></li>
+                    <li><a href="#how-we-use-info">6. How We Use Your Information</a></li>
+                    <li><a href="#data-sharing">7. Information Sharing & Subprocessors</a></li>
+                    <li><a href="#data-security">8. Security & Storage Architecture</a></li>
+                    <li><a href="#retention-deletion">9. Data Retention & Account Deletion</a></li>
+                    <li><a href="#user-rights">10. Your Rights & Privacy Choices</a></li>
+                    <li><a href="#permissions">11. Device Permissions Explanation</a></li>
+                    <li><a href="#children">12. Children's Privacy Notice</a></li>
+                    <li><a href="#contact">13. Contact & Grievance Officer</a></li>
+                </ul>
+            </nav>
+
+            <!-- 1. Introduction -->
+            <section id="introduction">
+                <h2>1. Introduction & Scope</h2>
+                <p>Welcome to <strong>Nisa Go</strong> (referred to herein as "Nisa Go", "we", "us", or "our"), available under application identifier <code>online.nisago.app</code> and web portal <a href="https://nisago.online" target="_blank" rel="noopener">https://nisago.online</a>.</p>
+                <p>This Privacy Policy applies to all users of our mobile applications, services, and digital platforms in Pakistan, including passengers ("Riders") and female drivers ("Captains"). It outlines our transparent practices regarding data collection, biometric verification, real-time GPS tracking, phone masking, and strict safety controls.</p>
+                <p>By registering, installing, or using Nisa Go, you acknowledge and agree to the data collection and processing methods described in this policy.</p>
+            </section>
+
+            <!-- 2. Information We Collect -->
+            <section id="information-we-collect">
+                <h2>2. Information We Collect</h2>
+                <p>To deliver safe, verified, and dependable transportation, we collect the following categories of information:</p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>A. Personal Profile</h4>
+                        <p>Full legal name, active mobile number, email address, profile photo, and designated trusted contacts for in-app SOS SafetyNet.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>B. Government ID</h4>
+                        <p>National Identity Card (CNIC) number, issuance/expiry dates, front & back document photos, plus driving licenses and vehicle records for captains.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>C. Biometric Verification</h4>
+                        <p>Live camera selfie captures, facial topology vectors, and liveness comparison records to verify CNIC ownership and maintain women-only safety.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>D. Real-Time Geolocation</h4>
+                        <p>Precise GPS coordinates, pickup and drop-off destinations, ride trajectory telemetry, and route history during active bookings.</p>
+                    </div>
+                </div>
+
+                <h3>2.1. Financial & Transaction Details</h3>
+                <p>Transactions made via digital channels are routed through licensed payment processors (including <strong>Safepay</strong> and the <strong>State Bank of Pakistan Raast</strong> multi-rail gateway). Nisa Go does not store full credit card numbers, CVVs, or bank security PINs on its servers. We only retain encrypted transaction tokens, billing references, and trip receipts.</p>
+
+                <h3>2.2. Technical & Telemetry Information</h3>
+                <p>We automatically collect device diagnostic telemetry, operating system version, device model, IP address, and Firebase Cloud Messaging push tokens to deliver app notifications, investigate bugs, and maintain uptime.</p>
+            </section>
+
+            <!-- 3. Biometric Policy -->
+            <section id="biometric-policy">
+                <h2>3. Biometric & Facial Data Policy</h2>
+                <div class="highlight-alert">
+                    <strong>Notice on Facial Recognition & Biometric Processing:</strong> Google Play and international privacy frameworks require clear disclosure regarding biometric data. Please read this section carefully.
+                </div>
+                <p>Nisa Go requires mandatory facial liveness verification and CNIC face comparison to guarantee user safety and enforce our women-only platform rule in Pakistan.</p>
+                <ul>
+                    <li><strong>Purpose:</strong> Biometric facial checks are used exclusively for: (1) 1:1 identity verification against your government CNIC; (2) liveness and anti-spoofing detection to prevent stolen IDs or deepfakes; and (3) gender eligibility verification.</li>
+                    <li><strong>How It Works:</strong> You capture a live selfie through the camera. Our cognitive vision algorithm compares facial landmarks against your CNIC photo.</li>
+                    <li><strong>No Sale or Third-Party Commercialization:</strong> We will never sell, lease, or commercialize your biometric data or facial photographs.</li>
+                    <li><strong>Retention & Deletion:</strong> Biometric comparison vectors are processed ephemerally during registration. Verification snapshots are stored in high-security encrypted storage and are permanently deleted upon account closure.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Location Practices -->
+            <section id="location-practices">
+                <h2>4. Geolocation Data Practices</h2>
+                <p>Nisa Go relies on precise GPS location services to match you with nearby drivers, calculate upfront fares, and ensure passenger security.</p>
+                <ul>
+                    <li><strong>Foreground Location:</strong> Accessed while the app is actively in use to display your current pickup point on the map and coordinate driver dispatch.</li>
+                    <li><strong>Active Ride Tracking:</strong> Location coordinates are monitored throughout an active journey to provide live route tracking, calculate distance fares, and facilitate emergency services.</li>
+                    <li><strong>Captain Tracking:</strong> Captains who mark their status as "Online" transmit location updates to receive dispatch requests for nearby rides.</li>
+                    <li><strong>No Passive Background Tracking for Riders:</strong> When you are not in an active ride and the app is closed, Nisa Go does not track your location.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Number Masking -->
+            <section id="number-masking">
+                <h2>5. Number Masking & Communications Privacy</h2>
+                <p>We prioritize your personal privacy. To protect riders and captains from harassment and unsolicited outreach:</p>
+                <ul>
+                    <li><strong>Zero Number Disclosure:</strong> Personal phone numbers are masked through encrypted in-app VoIP or virtual relay numbers. Captains never see a rider's personal phone number, and riders never see a captain's private number.</li>
+                    <li><strong>Zero Marketing Spam:</strong> We never sell, barter, or distribute your phone number or email to third-party telemarketers.</li>
+                    <li><strong>WhatsApp OTP Verification:</strong> Verification PINs are delivered securely using the official Meta WhatsApp Cloud API.</li>
+                </ul>
+            </section>
+
+            <!-- 6. How We Use Information -->
+            <section id="how-we-use-info">
+                <h2>6. How We Use Your Information</h2>
+                <ol>
+                    <li><strong>Service Fulfillment:</strong> Facilitating ride booking, live driver navigation, fare settlement, and digital receipts.</li>
+                    <li><strong>Safety & Identity Verification:</strong> Checking driver validity, authenticating CNIC records, and preventing fraud.</li>
+                    <li><strong>Emergency Assistance:</strong> Sharing live ride coordinates with your trusted contacts upon triggering the in-app SOS button, or dispatching details to local law enforcement (Police 15 / Women Helpline 1043).</li>
+                    <li><strong>Customer Support:</strong> Resolving fare disputes, addressing lost-and-found items, and investigating safety reports.</li>
+                    <li><strong>Legal & Regulatory Compliance:</strong> Fulfilling lawful statutory requirements under the laws of the Islamic Republic of Pakistan.</li>
+                </ol>
+            </section>
+
+            <!-- 7. Data Sharing -->
+            <section id="data-sharing">
+                <h2>7. Information Sharing & Subprocessors</h2>
+                <p>We share information only under strict confidentiality and technical necessity:</p>
+                <ul>
+                    <li><strong>Between Rider & Captain:</strong> Captains see your name, pickup/drop-off points, and rating. Passengers see the captain's photo, name, vehicle make, plate number, and rating.</li>
+                    <li><strong>Supabase Inc.:</strong> Cloud database infrastructure, identity authentication, and secure encrypted file storage.</li>
+                    <li><strong>Google LLC:</strong> Google Maps Platform for navigation & mapping; Firebase for push notifications and crash reporting.</li>
+                    <li><strong>Meta Platforms Inc.:</strong> Official WhatsApp Cloud API for multi-factor authentication.</li>
+                    <li><strong>Safepay & SBP Raast:</strong> Payment gateway rails for digital ride payments.</li>
+                    <li><strong>Face++ / Cognitive Services:</strong> Encrypted facial comparison and anti-spoofing verification.</li>
+                    <li><strong>Law Enforcement:</strong> We disclose ride data only when compelled by valid legal warrants or to protect human life in emergency situations.</li>
+                </ul>
+            </section>
+
+            <!-- 8. Data Security -->
+            <section id="data-security">
+                <h2>8. Security & Storage Architecture</h2>
+                <p>We implement enterprise-grade security protocols to protect your personal data:</p>
+                <ul>
+                    <li><strong>End-to-End Transit Security:</strong> All data transmitted between your device and our servers is encrypted using modern TLS 1.3 encryption.</li>
+                    <li><strong>Data at Rest:</strong> CNIC documents, license scans, and database records are encrypted using AES-256 standards.</li>
+                    <li><strong>Row-Level Security (RLS):</strong> Backend database rules ensure that each user can only access their own authenticated records.</li>
+                </ul>
+            </section>
+
+            <!-- 9. Retention & Deletion -->
+            <section id="retention-deletion">
+                <h2>9. Data Retention & Account Deletion</h2>
+                <p>You have full autonomy over your personal data and account lifecycle in accordance with Google Play Store guidelines.</p>
+                
+                <div class="deletion-steps">
+                    <h4>How to Delete Your Nisa Go Account and Data:</h4>
+                    <p><strong>Option 1 (In-App):</strong> Open the Nisa Go app &rarr; go to <strong>Profile / Settings</strong> &rarr; select <strong>Account Info</strong> &rarr; tap <strong>"Delete Account"</strong> and confirm your request.</p>
+                    <p><strong>Option 2 (Web / Email):</strong> Email our Data Protection Officer at <a href="mailto:privacy@nisago.online">privacy@nisago.online</a> with the subject line <em>"Account Deletion Request - Nisa Go"</em> from your registered email address.</p>
+                </div>
+
+                <p><strong>Deletion Timeline:</strong> Upon receiving your request, your account is immediately disabled. All personal identifiers, CNIC records, biometric verification images, and location histories will be permanently purged within thirty (30) days, except for non-identifiable financial transaction logs required under Pakistani tax regulations.</p>
+            </section>
+
+            <!-- 10. User Rights -->
+            <section id="user-rights">
+                <h2>10. Your Rights & Privacy Choices</h2>
+                <ul>
+                    <li><strong>Access & Correction:</strong> Review and update your profile details directly from the app settings.</li>
+                    <li><strong>Revoke Permissions:</strong> Disable camera, location, or notification permissions at any time through your phone's operating system settings.</li>
+                    <li><strong>Safety Inquiries:</strong> Request an audit of your ride records or file a grievance regarding any driver or passenger interaction.</li>
+                </ul>
+            </section>
+
+            <!-- 11. Device Permissions -->
+            <section id="permissions">
+                <h2>11. Device Permissions Explanation</h2>
+                <ul>
+                    <li><code>CAMERA</code>: Used strictly for live CNIC scanning and biometric facial verification.</li>
+                    <li><code>ACCESS_FINE_LOCATION</code> & <code>ACCESS_COARSE_LOCATION</code>: Used for pickup location matching, live trip navigation, and SOS safety sharing.</li>
+                    <li><code>POST_NOTIFICATIONS</code>: Used to send driver arrival notifications, ride receipts, and security alerts.</li>
+                    <li><code>READ_EXTERNAL_STORAGE</code> / Photo Library: Used solely when manually uploading vehicle or license verification documents.</li>
+                </ul>
+            </section>
+
+            <!-- 12. Children -->
+            <section id="children">
+                <h2>12. Children's Privacy Notice</h2>
+                <p>Nisa Go is strictly restricted to individuals aged eighteen (18) and older. We do not intentionally collect or process data from children under 18. If we identify that a minor has registered an account, we will immediately deactivate the profile and delete all associated records.</p>
+            </section>
+
+            <!-- 13. Contact Us -->
+            <section id="contact">
+                <div class="contact-box">
+                    <h3>13. Contact & Grievance Officer</h3>
+                    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data protection rights, please contact our dedicated Privacy & Safety Team:</p>
+                    <p>
+                        <strong>Application:</strong> Nisa Go (Package: <code>online.nisago.app</code>)<br>
+                        <strong>Privacy Inquiries:</strong> <a href="mailto:privacy@nisago.online">privacy@nisago.online</a><br>
+                        <strong>Customer Support:</strong> <a href="mailto:support@nisago.online">support@nisago.online</a><br>
+                        <strong>Official Website:</strong> <a href="https://nisago.online" target="_blank" rel="noopener">https://nisago.online</a><br>
+                        <strong>Operating Region:</strong> Lahore, Islamabad, and major metropolitan areas, Pakistan
+                    </p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="footer-bar">
+        <p>&copy; 2026 Nisa Go. All rights reserved. Built with pride for women's safety in Pakistan.</p>
+    </footer>
+
+</body>
+</html>
